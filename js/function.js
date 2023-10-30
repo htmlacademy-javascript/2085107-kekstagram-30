@@ -1,15 +1,14 @@
 function checkLength(str, maxLength) {
-  const success = `строка прошла  ${str}`;
-  const fail = `строка не прошла  ${str}`;
   if (str.length <= maxLength) {
-    return success;
-  } return fail;
+    return true;
+  }
+  return false;
 }
-checkLength();
+checkLength('dadada',2);
 
 
 function checkPalindrome(str) {
-  const normalizeStr = str.replaceAll() && str.toLowerCase();
+  const normalizeStr = str.replaceAll(' ','').toLowerCase();
 
   let reverseStr = '';
 
@@ -18,8 +17,9 @@ function checkPalindrome(str) {
   }
 
 
-  const result = normalizeStr === reverseStr;
-  return `${str}, ${result}`;
+  return normalizeStr === reverseStr;
+
 
 }
-checkPalindrome();
+checkPalindrome('топот');
+
