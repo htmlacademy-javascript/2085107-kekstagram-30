@@ -40,4 +40,6 @@ function createPicture(i) {
   };
 }
 
+// eslint-disable-next-line no-unused-vars
 const pictures = Array.from({ length: 25 }, (_, i) => createPicture(i));
+
